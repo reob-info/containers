@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../containers.css" />
+        <style>
+            .container .header, .container .footer {
+                background-color: #33f;
+            }
+
+            .container .header, .container .header a, .container .footer > span {
+                font-size: x-large;
+                font-weight: 600;
+                color: #eee;
+            }
+
+            #contents > span {
+                font-size: x-large;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container h100">
+            <div class="header h05">
+                <div class="container h100">
+                    <div class="header none"></div>
+                    <div class="left w05"></div>
+                    <div class="middle w90">
+                        <div class="container h100">
+                            <div class="header none"></div>
+                            <div class="left w40">
+                                <span>Site Name</span>
+                            </div>
+                            <div class="middle w20"></div>
+                            <div class="right w40 righttext">
+                                <a href="#">Home</a>
+                            </div>
+                            <div class="footer none"></div>
+                        </div>
+                    </div>
+                    <div class="right w05"></div>
+                    <div class="footer none"></div>
+                </div>
+            </div>
+            <div class="left w05"></div>
+            <div class="middle w90 h90" id="contents">
+              <span>Contents goes here</span>
+            </div>
+            <div class="right w05"></div>
+            <div class="footer h05">
+              <span>Copyright (c) 2020 ReOb</span>
+            </div>
+        </div>
+    </body>
+</html>
