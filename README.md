@@ -54,3 +54,9 @@ Have a look at our examples to understand how to use Containers.
 
 **You can contribute to Containers creating amazing themes and commiting to our repository, <br>
 donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
+
+KNOWN BUGS:
+
+- &lt;DOCTYPE html&gt;
+  * When this tag is present in html, the height of document will not be set, and the container will not occupy all the screen. Do not use this tag in your html.
+  
