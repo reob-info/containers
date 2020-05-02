@@ -1,0 +1,28 @@
+div.demo {
+    text-align: center;
+}
+
+div.demo > div.header {
+    background-color: #CCC;
+}
+
+div.demo > div.left {
+    background-color: #0CC;
+}
+
+div.demo > div.middle {
+    background-color: #C0C;
+}
+
+div.demo > div.right {
+    background-color: #CC0;
+}
+
+div.demo > div.footer {
+    background-color: #0C0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+}
