@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../containers.css" />
+        <link rel="stylesheet" type="text/css" href="demo.css" />
+    </head>     
+    <body>
+        <div class="w100 h05" style="clear: both;">
+            <p style="text-align: center;">A Container</p>
+        </div>
+        <div class="container demo h95">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">MIDDLE</div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+
+        <div class="w100 h05" style="clear: both;">
+            <p style="text-align: center;">A Container inside another Container</p>
+        </div>
+        <div class="container demo h95">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">
+                <div class="container demo">
+                    <div class="header">HEADER</div>
+                    <div class="left">LEFT</div>
+                    <div class="middle">MIDDLE</div>
+                    <div class="right">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+            </div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+
+        <div class="w100 h10" style="clear: both;">
+            <p style="text-align: center;">A Container inside another Container:</p>
+            <p style="text-align: center;">Removing the left and right bars from the inner Container and adjusting the middle width</p>
+        </div>
+        <div class="container demo h90">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">
+                <div class="container demo">
+                    <div class="header">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">MIDDLE</div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+            </div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+
+        <div class="w100, h05" style="clear: both;">
+            <p style="text-align: center;">A Container with two columns made by Containers</p>
+        </div>
+        <div class="container demo h95">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">
+                <div class="container demo w50">
+                    <div class="header">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">MIDDLE</div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+                <div class="container demo w50">
+                    <div class="header">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">MIDDLE</div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+            </div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+        
+        <div class="w100, h05" style="clear: both;">
+            <p style="text-align: center;">A Container with two rows, each one having two columns, made by Containers</p>
+        </div>
+        <div class="container demo h95">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">
+                <div class="container demo w100 h50">
+                    <div class="header">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">
+                        <div class="container demo w50">
+                            <div class="header">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer">FOOTER</div>
+                        </div>
+                        <div class="container demo w50">
+                            <div class="header">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer">FOOTER</div>
+                        </div>
+                    </div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+                <div class="container demo w100 h50">
+                    <div class="header">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">
+                        <div class="container demo w50">
+                            <div class="header">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer">FOOTER</div>
+                        </div>
+                        <div class="container demo w50">
+                            <div class="header">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer">FOOTER</div>
+                        </div>
+                    </div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer">FOOTER</div>
+                </div>
+            </div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+        
+        <div class="w100, h05" style="clear: both;">
+            <p style="text-align: center;">A Container containing a grid with two rows, each one having two columns, made by Containers</p>
+        </div>
+        <div class="container demo h95">
+            <div class="header">HEADER</div>
+            <div class="left">LEFT</div>
+            <div class="middle">
+                <div class="container demo w100 h50">
+                    <div class="header none">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">
+                        <div class="container demo w50">
+                            <div class="header none">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer none">FOOTER</div>
+                        </div>
+                        <div class="container demo w50">
+                            <div class="header none">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer none">FOOTER</div>
+                        </div>
+                    </div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer none">FOOTER</div>
+                </div>
+                <div class="container demo w100 h50">
+                    <div class="header none">HEADER</div>
+                    <div class="left none">LEFT</div>
+                    <div class="middle w100">
+                        <div class="container demo w50">
+                            <div class="header none">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer none">FOOTER</div>
+                        </div>
+                        <div class="container demo w50">
+                            <div class="header none">HEADER</div>
+                            <div class="left none">LEFT</div>
+                            <div class="middle w100">MIDDLE</div>
+                            <div class="right none">RIGHT</div>
+                            <div class="footer none">FOOTER</div>
+                        </div>
+                    </div>
+                    <div class="right none">RIGHT</div>
+                    <div class="footer none">FOOTER</div>
+                </div>
+            </div>
+            <div class="right">RIGHT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+        <div class="w100, h05" style="clear: both;">
+            <p style="text-align: center;">Using these examples as base, it is possible to create any layout desired.</p>
+        </div>
+    </body>
+</html>
