@@ -52,4 +52,5 @@ Using Containers is possible to create any layout desired.
 
 Have a look at our examples to understand how to use Containers.
 
-**You can contribute to Containers creating amazing themes and commiting to our repository, donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
+**You can contribute to Containers creating amazing themes and commiting to our repository, <br>
+donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
