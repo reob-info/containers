@@ -51,3 +51,5 @@ The number in class is the percentage that will be applied to the Container sect
 Using Containers is possible to create any layout desired.
 
 Have a look at our examples to understand how to use Containers.
+
+**You can contribute to Containers creating amazing themes and commiting to our repository, donating or with suggestions.**
