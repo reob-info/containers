@@ -2,11 +2,11 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../css/reob-containers.css" />
         <style>
-            .container .header, .container .footer {
+            .reob-container .header, .reob-container .footer {
                 background-color: #33f;
             }
 
-            .container .header, .container .header a, .container .footer > span {
+            .reob-container .header, .reob-container .header a, .reob-container .footer > span {
                 font-size: x-large;
                 font-weight: 600;
                 color: #eee;
@@ -15,6 +15,11 @@
             #contents > span {
                 font-size: x-large;
                 font-weight: 600;
+            }
+            
+            #copyright {
+                 padding-top: 2mm;
+                 padding-left: 10%;
             }
         </style>
     </head>
@@ -46,7 +51,7 @@
               <span>Contents goes here</span>
             </div>
             <div class="right w05"></div>
-            <div class="footer h05">
+            <div class="footer h05" id="copyright">
               <span>Copyright (c) 2020 ReOb</span>
             </div>
         </div>
