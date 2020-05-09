@@ -52,11 +52,11 @@ Using Containers is possible to create any layout desired.
 
 Have a look at our examples to understand how to use Containers.
 
+Containers has many components to be used too. Some of them only uses CSS to be formatted, others uses Javascript to implement actions over themselves.
+
+The icons used at our components was taken from <a href="https://fontawesome.com/">Font Awesome</a> Desktop Version and are included to download.
+
+These icons was manually renamed to have their names starting with "fa-" as an attribution to their proprietary: Font Awesome.
+
 **You can contribute to Containers creating amazing themes and commiting to our repository, <br>
 donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
-
-KNOWN BUGS:
-
-- &lt;DOCTYPE html&gt;
-  * When this tag is present in html, the height of document will not be set, and the container will not occupy all the screen. Do not use this tag in your html.
-  
