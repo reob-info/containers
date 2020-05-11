@@ -159,7 +159,7 @@ class AjaxRequest {
       this.xhttp = new XMLHttpRequest();
    }
    
-   function doRequest(method, url, header = null, data = null) {
+   doRequest(method, url, header = null, data = null) {
       switch(method) {
          case 'GET':
             this.xhttp.open(method, url);
