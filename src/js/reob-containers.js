@@ -157,9 +157,27 @@ class AjaxRequest {
       this.function_ok = function_ok;
       this.function_error = function_error;
       this.xhttp = new XMLHttpRequest();
+      this.xhttp.withCredentials = true;
    }
    
    doRequest(method, url, header = null, data = null) {
+      var f_ok  = this.function_ok;
+      var f_err = this.function_error;
+      
+      this.xhttp.onreadystatechange = function () {
+         if (this.readyState == 4) {
+            if (this.status == 200) {
+               f_ok(this.responseText);
+            } else {
+               if (f_err) {
+                  if (this.responseText) {
+                     f_err(this.responseText);
+                  }
+               }
+            }
+         }
+      }
+      
       switch(method) {
          case 'GET':
             this.xhttp.open(method, url);
@@ -168,26 +186,10 @@ class AjaxRequest {
          case 'POST':
             this.xhttp.open(method, url);
             if (header) {
-               this.xhttp.setRequestHeader(header);
-            } else {
-               this.xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-               // this.xhttp.setRequestHeader("Content-type", "application/json");
+               this.xhttp.setRequestHeader(header[0], header[1]);
             }
             this.xhttp.send(data);
             break;
-      }
-      
-      var f_ok  = this.funtion_ok;
-      var f_err = this.function_error;
-      
-      this.xhttp.onreadystatechange = function () {
-         if (this.readyState == 4 && this.status == 200) {
-            f_ok(this.responseText);
-         } else {
-            if (f_err) {
-               f_err(this.responseText);
-            }
-         }
       }
    }
 }
