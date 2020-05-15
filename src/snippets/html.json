@@ -107,7 +107,7 @@
      "reob-download-button": {
         "body": [
            "<button class=\"reob-download-button\" type=\"submit\">DOWNLOAD",
-           "   <img src=\"../icons/fa-upload.svg\"></img>",
+           "   <img src=\"../icons/fa-download.svg\"></img>",
            "</button>"
         ],
         "description": "reob-download-button",
