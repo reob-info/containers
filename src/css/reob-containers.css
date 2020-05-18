@@ -15,9 +15,10 @@
    REOB CAN NOT BE CHARGED BY ANY DAMAGE OR PREJUDICE, DERIVED OR NOT, OF THE USE OF THIS SOFTWARE.
    IF YOU DECIDED TO USE IT, TAKE ALL THE RISK FOR YOURSELF.
 
-   =========================================
+   =================================================================================================
    - FORMAT CLASSES IN THIS FILE:
      - SET TEXT ALIGN:
+       - left-text
        - center-text
        - right-text
      - SET TEXT TRANSFORM:
@@ -27,22 +28,24 @@
      - SET DISPLAY TO NONE:
        - none
      - SET WIDTH (as percentage of screen size):
-       - none
-       - w00, w05, w10, w15, w20, w25, w30, w35, w40, w45,
-       - w50, w55, w60, w65, w70, w75, w80, w85, w90, w95, w100
+       - w00 (set display to none too)
+       - w05, w10, w15, w20, w25, w30, w35, w40, w45, w50
+       - w55, w60, w65, w70, w75, w80, w85, w90, w95, w100
      - SET HEIGHT (as percentage of screen size):
-       - none
-       - h00, h05, h10, h15, h20, h25, h30, h35, h40, h45,
-       - h50, h55, h60, h65, h70, h75, h80, h85, h90, h95, h100
+       - h00 (set display to none too)
+       - h05, h10, h15, h20, h25, h30, h35, h40, h45, h50
+       - h55, h60, h65, h70, h75, h80, h85, h90, h95, h100
      - SET HORIZONTAL PADDING (padding left and right as percentage of screen size):
        - ph00, ph05, ph10, ph15, ph20
      - SET VERTICAL PADDING (padding top and bottom as percentage of screen size):
        - pv00, pv05, pv10, pv15, pv20
-   
+
    - COMPONENTS IN THIS FILE:
      - CSS ONLY:
        - REOB-CONTAINER
        - REOB-CONTAINER-GRID
+       - REOB-HBOX
+       - REOB-VBOX
        - REOB-MENU
        - REOB-SCROLL
        - REOB-SLIDE-TAB
@@ -56,8 +59,8 @@
        - REOB-MULTISELECT
        - REOB-UNISELECT
        - REOB-PROGRESS-BAR
-   =========================================
-     
+   =================================================================================================
+
    =========================================
    STRUCTURE OF REOB-CONTAINER COMPONENT:
    =========================================
@@ -70,7 +73,9 @@
       <div class="footer"></div>
    </div>
 
-   Just copy the structure above into your code and format doing:
+   ===============
+   EXAMPLE OF USE:
+   ===============
 
    <div class="reob-container">
       <div class="header w30 h05"></div>
@@ -93,6 +98,24 @@
       </div>
    </div>
 
+   =========================================
+   STRUCTURE OF REOB-HBOX COMPONENT:
+   =========================================
+
+   <div class="reob-hbox">
+      <!-- Your code goes here -->
+   </div>
+
+   Just copy this structure into your code.
+
+   =========================================
+   STRUCTURE OF REOB-VBOX COMPONENT:
+   =========================================
+
+   <div class="reob-vbox">
+      <!-- Your code goes here -->
+   </div>
+
    Just copy this structure into your code.
 
    =========================================
@@ -111,8 +134,6 @@
       </li>
    </ul>
 
-   Just copy this structure into your code.
- 
    =========================================
    STRUCTURE OF REOB-SCROLL COMPONENT:
    =========================================
@@ -120,8 +141,6 @@
    <div class="reob-scroll">
       <!-- Your code goes here -->
    </div>
-
-   Just copy this structure into your code.
 
    =========================================
    STRUCTURE OF REOB-SLIDE-TAB COMPONENT:
@@ -131,8 +150,6 @@
       <!-- Your code goes here -->
    </div>
 
-   Just copy this structure into your code.
-
    ====================================
    STRUCTURE OF REOB-SWITCH COMPONENT:
    ====================================
@@ -140,7 +157,7 @@
    <div class="reob-switch">
       <label>NO</label>   <!-- OPTIONAL: change the label or let it blank -->
       <label>
-         <input type="checkbox">
+         <input type="checkbox" name="">      <!-- NECESSARY: SET NAME -->
          <span class="slider"></span>
       </label>
       <label>YES</label>   <!-- OPTIONAL: change the label or let it blank -->
@@ -149,15 +166,15 @@
    ====================================
    STRUCTURE OF REOB-FILE COMPONENT:
    ====================================
-   
-   <input type="file" class="reob-file" id="" name="">      <!-- NECESSARY: SET ID AND NAME -->>
-   
-   Apply reob-file class only to <input type="file"> elements.
+
+   <input type="file" class="reob-file" id="" name="">      <!-- NECESSARY: SET ID AND NAME -->
+
+   IMPORTANT: Apply reob-file class only to <input type="file"> elements.
 
    ====================================
    STRUCTURE OF REOB-SEARCH COMPONENT:
    ====================================
-   
+
    <div class="reob-search">
       <div class="tooltip">
          <input type="search" placeholder="Filter" onkeypress="">   <!-- NECESSARY: SET THE ONKEYPRESS CALL FUNCTION HERE -->
@@ -169,34 +186,45 @@
    ==========================================
    STRUCTURE OF REOB-SUBMIT-BUTTON COMPONENT:
    ==========================================
-   
-   <button class="reob-submit-button" type="submit">Submit
+
+   <button class="reob-submit-button" type="submit">SUBMIT
       <img src="../icons/fa-upload.svg"></img>
    </button>
 
    ============================================
    STRUCTURE OF REOB-DOWNLOAD-BUTTON COMPONENT:
    ============================================
-   
-   <button class="reob-download-button">Download
+
+   <button class="reob-download-button">DOWNLOAD
       <img src="../icons/fa-download.svg"></img>
    </button>
 
    =============================================
    STRUCTURE OF REOB-TABLE-PAGINATION COMPONENT:
    =============================================
-   
-   <div class="reob-table-pagination" id="">   <!-- NECESSARY: SET ID -->
-      <button class="reob-fetch-prior-data" type="submit" onclick="this.parentElement.children[3].value = this.parentElement.children[3].value - this.parentElement.children[2].value">Prior
+
+   <div class="reob-table-pagination" id="">      <!-- NECESSARY: SET ID -->
+      <button class="reob-fetch-prior-data" type="submit" onclick="location.href=':url/:report?offset=:offset'">PRIOR   <!-- NECESSARY: CHANGE :url, :report and :offset TO RIGHT VALUES -->
          <img src="../icons/fa-angle-left.svg"></img>
       </button>
-      <button class="reob-fetch-next-data" type="submit" onclick="this.parentElement.children[3].value = this.parentElement.children[3].value + this.parentElement.children[2].value">Next
+      <button class="reob-fetch-next-data" type="submit" onclick="location.href=':url/:report?offset=:offset'">NEXT   <!-- NECESSARY: CHANGE :url, :report and :offset TO RIGHT VALUES -->
          <img src="../icons/fa-angle-right.svg"></img>
       </button>
-      <input type="hidden" name="limit">
-      <input type="hidden" name="offset">
    </div>
-     
+
+   ===============
+   EXAMPLE OF USE:
+   ===============
+
+   <div class="reob-table-pagination" id="pages">
+      <button class="reob-fetch-prior-data" type="submit" onclick="location.href='http://localhost/my_report?offset=10'">PRIOR
+         <img src="../icons/fa-angle-left.svg"></img>
+      </button>
+      <button class="reob-fetch-next-data" type="submit" onclick="location.href='http://localhost/my_report?offset=30'">NEXT
+         <img src="../icons/fa-angle-right.svg"></img>
+      </button>
+   </div>
+
    =============================================
    STRUCTURE OF REOB-MULTISELECT COMPONENT:
    =============================================
@@ -212,10 +240,10 @@
 
    Just copy this structure into your code, set id, and fill the options.
    Do not forget to set onclick event of option exactly like in the example below.
- 
-   =============================================
-   EXAMPLE OF REOB-MULTISELECT COMPONENT FILLED:
-   =============================================
+
+   ===============
+   EXAMPLE OF USE:
+   ===============
 
    <div class="reob-multiselect" id="ms1">
       <div class="selected">
@@ -239,7 +267,7 @@
    STRUCTURE OF REOB-UNISELECT COMPONENT:
    =============================================
 
-   <div class="uniselect" id="">   <!-- NECESSARY: SET ID -->
+   <div class="reob-uniselect" id="">   <!-- NECESSARY: SET ID -->
       <div class="selected">
          <!-- Do not fill this section by hand. Use UniSelect.selectOption(id, value) instead. -->
       </div>
@@ -251,11 +279,11 @@
    Just copy this structure into your code, set id, and fill the options.
    Do not forget to set onclick event of option exactly like in the example below.
 
-   =============================================
-   EXAMPLE OF REOB-UNISELECT COMPONENT FILLED:
-   =============================================
+   ===============
+   EXAMPLE OF USE:
+   ===============
 
-   <div class="uniselect" id="us1">
+   <div class="reob-uniselect" id="us1">
       <div class="selected">
          <!-- Do not fill this section by hand. Use UniSelect.selectOption(id, value) instead. -->
       </div>
@@ -291,16 +319,16 @@
 }
 
 /* REOB-FORMAT-CLASSES */
+*.left-text   { text-align: left; }
 *.center-text { text-align: center; }
 *.right-text  { text-align: right; }
 *.upper-text  { text-transform: uppercase; }
 *.lower-text  { text-transform: lowercase; }
 *.capitalize  { text-transform: capitalize; }
 
-*.none, 
-*.w00, 
-*.h00 { display: none; width: 0; height: 0; }
+*.none { display: none; }
 
+*.w00 { display: none; width: 0; }
 *.w05 { width: 5% !important; }
 *.w10 { width: 10% !important; }
 *.w15 { width: 15% !important; }
@@ -323,6 +351,7 @@
 *.w95 { width: 95% !important; }
 *.w100 { width: 100% !important; }
 
+*.h00 { display: none; height: 0; }
 *.h05 { height: 5% !important; }
 *.h10 { height: 10% !important; }
 *.h15 { height: 15% !important; }
@@ -410,6 +439,22 @@ div.reob-container > div.footer {
 
 .reob-container-grid-item {
    text-align: center;
+}
+
+/* REOB-HBOX */
+.reob-hbox > * {
+	height: 100%;
+	padding: 2mm;
+	margin-right: 1mm;
+	display: inline-block;
+}
+
+/* REOB-VBOX */
+.reob-vbox > * {
+	width: 100%;
+	padding: 2mm;
+	margin-right: 1mm;
+	display: block;
 }
 
 /* REOB-MENU */
@@ -504,18 +549,18 @@ div.reob-container > div.footer {
    margin-left: 0;
    margin-top: 3px;
 }
- 
+
 .reob-switch label:last-child {
    margin-left: 14mm;
    margin-top: 3px;
 }
 
-.reob-switch input { 
+.reob-switch input {
    opacity: 0;
    width: 0;
    height: 0;
 }
- 
+
 .reob-switch .slider {
    position: absolute;
    cursor: pointer;
@@ -528,7 +573,7 @@ div.reob-container > div.footer {
    transition: .4s;
    border-radius: 3mm;
 }
- 
+
 .reob-switch .slider:before {
    position: absolute;
    content: "";
@@ -541,15 +586,15 @@ div.reob-container > div.footer {
    transition: .4s;
    border-radius: 50%;
 }
- 
+
 .reob-switch input:checked + .slider {
    background-color: #28f;
 }
- 
+
 .reob-switch input:focus + .slider {
    box-shadow: 0 0 1px #28f;
 }
- 
+
 .reob-switch input:checked + .slider:before {
    -webkit-transform: translateX(7mm);
    -ms-transform: translateX(7mm);
@@ -659,7 +704,7 @@ div.reob-container > div.footer {
 /* REOB-SUBMIT-BUTTON
    REOB-DOWNLOAD-BUTTON
    REOB-TABLE-PAGINATION */
-.reob-submit-button, .reob-download-button, .reob-table-pagination {
+.reob-submit-button, .reob-download-button, .reob-table-pagination button {
    padding: 2mm;
    min-height: 7mm;
    cursor: pointer;
@@ -668,16 +713,29 @@ div.reob-container > div.footer {
    font-weight: 600;
 }
 
-.reob-submit-button:hover, .reob-download-button:hover, .reob-table-pagination:hover {
+.reob-submit-button:hover, .reob-download-button:hover, .reob-table-pagination button:hover {
    border-color: #333;
 }
-.reob-submit-button img, .reob-download-button img, .reob-table-pagination img {
+.reob-submit-button img, .reob-download-button img, .reob-table-pagination button img {
    position: relative;
    float: right;
    width: 10px;
    margin-left: 1mm;
    margin-right: 1mm;
    margin-top: 2px;
+}
+
+.reob-table-pagination button img {
+   height: 10px;
+   margin-top: 3px;
+}
+
+.reob-table-pagination > .reob-fetch-prior-data {
+   padding-right: 4mm;
+}
+
+.reob-table-pagination > .reob-fetch-next-data {
+   padding-left: 4mm;
 }
 
 .reob-table-pagination > .reob-fetch-prior-data img {
@@ -844,14 +902,14 @@ div.reob-container > div.footer {
 .reob-progress-bar > div {
    width: 0;
    height: 10mm;
-   margin-left: 0;
-   margin-right: 0;
+   margin: 0;
+   border-radius: 6px;
    background-color: #333;
 }
 
 .reob-progress-bar > label {
    position: relative;
-   top: -13mm;
+   top: -9mm;
    margin-left: 3mm;
    color: #fff;
    float: left;
