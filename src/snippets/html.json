@@ -1,4 +1,23 @@
 {
+    "reob-html": {
+        "body": [
+				"<html>",
+				"	<head>",
+				"		<meta charset=\"UTF-8\">",
+				"		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+				"		<title>$1</title>",
+				"		<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
+				"		<link rel=\"stylesheet\" href=\"../css/reob-containers.css\">",
+				"		<script src=\"../js/reob-containers.js\" type=\"application/javascript\" charset=\"utf-8\"></script>",
+				"	</head>",
+				"	<body>",
+				"		$2",
+				"	</body>",
+				"</html>"
+        ],
+        "description": "reob-html",
+        "prefix": "reob"
+     },
     "reob-container": {
         "body": [
            "<div class=\"reob-container\">",
@@ -12,7 +31,7 @@
         "description": "reob-container",
         "prefix": "reob"
      },
-     "reob-grid-container": {
+     "reob-container-grid": {
         "body": [
            "<div class=\"reob-container-grid\">",
            "   <div class=\"reob-container-grid-item\">",
@@ -21,7 +40,27 @@
            "   </div>",
            "</div>"
         ],
-        "description": "reob-grid-container",
+        "description": "reob-container-grid",
+        "prefix": "reob"
+     },
+     "reob-hbox": {
+        "body": [
+           "<div class=\"reob-hbox\">",
+           "   <!-- Your code goes here -->",
+           "   ${1:code}",
+           "</div>"
+        ],
+        "description": "reob-hbox",
+        "prefix": "reob"
+     },
+     "reob-vbox": {
+        "body": [
+           "<div class=\"reob-vbox\">",
+           "   <!-- Your code goes here -->",
+           "   ${1:code}",
+           "</div>"
+        ],
+        "description": "reob-vbox",
         "prefix": "reob"
      },
      "reob-menu": {
@@ -107,7 +146,7 @@
      "reob-download-button": {
         "body": [
            "<button class=\"reob-download-button\" type=\"submit\">DOWNLOAD",
-           "   <img src=\"../icons/fa-download.svg\"></img>",
+           "   <img src=\"../icons/fa-upload.svg\"></img>",
            "</button>"
         ],
         "description": "reob-download-button",

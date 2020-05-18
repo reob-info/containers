@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="html">
+  <snippet id="reob-html">
+    <text><![CDATA[
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>$1</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/reob-containers.css">
+		<script src="../js/reob-containers.js" type="application/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		$2
+	</body>
+</html>
+]]></text>
+    <description>reob-html</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-container">
+    <text><![CDATA[
+<div class="reob-container">
+	<div class="header">${1:header}</div>
+	<div class="left">${2:left}</div>
+	<div class="middle">
+		${3:middle}
+	</div>
+	<div class="right">${4:right}</div>
+	<div class="footer">${5:footer}</div>
+</div>
+]]></text>
+    <description>reob-container</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-container-grid">
+    <text><![CDATA[
+<div class="reob-container-grid">
+   <div class="reob-container-grid-item">
+      <!-- Your code goes here -->
+      ${1:code}
+   </div>
+</div>
+]]></text>
+    <description>reob-container-grid</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-hbox">
+    <text><![CDATA[
+<div class="reob-hbox">
+   <!-- Your code goes here -->
+   ${1:code}
+</div>
+]]></text>
+    <description>reob-hbox</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-vbox">
+    <text><![CDATA[
+<div class="reob-vbox">
+   <!-- Your code goes here -->
+   ${1:code}
+</div>
+]]></text>
+    <description>reob-vbox</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-menu">
+    <text><![CDATA[
+<ul class="reob-menu">
+   <li><a href="${1:url}">${2:label}</a></li>
+   <li><a href="${3:url}">${4:label}</a></li>
+   <li><a href="${5:url}">${6:label}</a>
+      <ul id="reob-submenu">
+         <li><a href="${7:url}">${8:label}</a></li>
+         <li><a href="${9:url}">${10:label}</a></li>
+         <li><a href="${11:url}">${12:label}</a></li>
+      </ul>
+   </li>
+</ul>
+]]></text>
+    <description>reob-menu</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-scroll">
+    <text><![CDATA[
+<div class="reob-scroll">
+   <!-- Your code goes here -->
+   ${1:code}
+</div>
+]]></text>
+    <description>reob-scroll</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-slide-tab">
+    <text><![CDATA[
+<div class="reob-slide-tab">
+   <!-- Your code goes here -->
+   ${1:code}
+</div>
+]]></text>
+    <description>reob-slide-tab</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-switch">
+    <text><![CDATA[
+<div class="reob-switch">
+   <label>NO</label>
+   <label>
+      <input type="checkbox" name="${1:name}">
+      <span class="slider"></span>
+   </label>
+   <label>YES</label>
+</div>
+]]></text>
+    <description>reob-switch</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-file">
+    <text><![CDATA[
+			<input type="file" class="reob-file" id="${1:id}" name="${2:name}">
+]]></text>
+    <description>reob-file</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-search">
+    <text><![CDATA[
+<div class="reob-search">
+   <div class="tooltip">
+      <input type="search" placeholder="Filter" onkeypress="${1:call_function}">
+      <button onclick="${2:call_function}"><img src="../icons/fa-search.svg"></img></button>
+      <span class="tooltiptext">${3:tooltip}</span>
+   </div>
+</div>
+]]></text>
+    <description>reob-search</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-submit-button">
+    <text><![CDATA[
+<button class="reob-submit-button" type="submit">SUBMIT
+   <img src="../icons/fa-upload.svg"></img>
+</button>
+]]></text>
+    <description>reob-submit-button</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-download-button">
+    <text><![CDATA[
+<button class="reob-download-button" type="submit">DOWNLOAD
+   <img src="../icons/fa-download.svg"></img>
+</button>
+]]></text>
+    <description>reob-download-button</description>
+    <tag>reob</tag>
+  </snippet>
+</snippets>
+<snippet id="reob-table-pagination">
+    <text><![CDATA[
+<div class="reob-table-pagination" id="${1:id}">
+   <button class="reob-fetch-prior-data" type="submit" onclick="location.href='${2:url}?offset=${3:offset}'">PRIOR
+      <img src="../icons/fa-angle-left.svg"></img>
+   </button>
+   <button class="reob-fetch-next-data" type="submit" onclick="location.href='${4:url}?offset=${5:offset}'">NEXT
+      <img src="../icons/fa-angle-right.svg"></img>
+   </button>
+</div>
+]]></text>
+    <description>reob-table-pagination</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-multiselect">
+    <text><![CDATA[
+<div class="reob-multiselect" id="${1:id}">
+   <div class="selected"></div>
+   <div class="options">
+      <optgroup label="${2:group}">
+         <option onclick="MultiSelect.addTag(this)" value="${3:value}">${4:label}</option>
+      </optgroup>
+   </div>
+   <input type="hidden">
+</div>
+]]></text>
+    <description>reob-multiselect</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-uniselect">
+    <text><![CDATA[
+<div class="reob-uniselect" id="${1:id}">
+   <div class="selected"></div>
+   <div class="options">
+      <optgroup label="${2:group}">
+         <option onclick="UniSelect.addTag(this)" value="${3:value}">${4:label}</option>
+      </optgroup>
+   </div>
+   <input type="hidden">
+</div>
+]]></text>
+    <description>reob-uniselect</description>
+    <tag>reob</tag>
+  </snippet>
+  <snippet id="reob-progressbar">
+    <text><![CDATA[
+<div class="reob-progressbar" id="${1:id}">
+   <div></div>
+   <label>Total: 0%</label>
+</div>
+]]></text>
+    <description>reob-progress-bar</description>
+    <tag>reob</tag>
+  </snippet>
+</snippets>
+
