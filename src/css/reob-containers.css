@@ -479,16 +479,19 @@ div.reob-container > div.footer {
 
 /* REOB-HBOX */
 .reob-hbox {
-	width: 100%;
+	min-width: 100%;
 }
 
 .reob-hbox * {
 	display: inline-block;
-	height: 100%;
+	min-height: 100%;
+	margin-right: 1mm;;
 }
 
 .reob-hbox .reob-vbox * {
 	display: block;
+	min-width: 100%;
+	min-height: 5%;
 }
 
 /* REOB-VBOX */
@@ -498,11 +501,15 @@ div.reob-container > div.footer {
 
 .reob-vbox * {
 	display: block;
-	width: 100%;
+	min-width: 100%;
+	margin-bottom: 1mm;
+	min-height: 5%;
 }
 
 .reob-vbox .reob-hbox * {
 	display: inline-block;
+	min-width: 5%;
+	min-height: 100%;
 }
 
 /* REOB-MENU */
