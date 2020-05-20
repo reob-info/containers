@@ -35,7 +35,7 @@ class ReobMultiSelect {
 		while ( !( ( s.tagName == "DIV" ) && ( s.className == "reob-multiselect" ) ) ) {
 			s = s.parentElement;
 		}
-		var t = '<option onclick="MultiSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
+		var t = '<option onclick="ReobMultiSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
 		if ( !s.children[ 0 ].innerHTML.includes( t ) ) {
 			s.children[ 0 ].innerHTML += t;
 		}
@@ -45,7 +45,7 @@ class ReobMultiSelect {
 	}
 
 	static removeTag ( comp ) {
-		var t = '<option onclick="MultiSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
+		var t = '<option onclick="ReobMultiSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
 		var s = comp.parentElement;
 		s.innerHTML = s.innerHTML.replace( t, '' );
 		s.children[ 2 ].name = s.id;
@@ -90,7 +90,7 @@ class ReobUniSelect {
 		while ( !( ( s.tagName == "DIV" ) && ( s.className == "reob-uniselect" ) ) ) {
 			s = s.parentElement;
 		}
-		var t = '<option onclick="UniSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
+		var t = '<option onclick="ReobUniSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
 		s.children[ 0 ].innerHTML = t;
 		s.children[ 2 ].name = s.id;
 		s.children[ 2 ].value = UniSelect.getValue( s.id );
@@ -98,7 +98,7 @@ class ReobUniSelect {
 	}
 
 	static removeTag ( comp ) {
-		var t = '<option onclick="UniSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
+		var t = '<option onclick="ReobUniSelect.removeTag(this)" value="' + comp.value + '">' + comp.innerText + '</option>';
 		var s = comp.parentElement;
 		s.innerHTML = s.innerHTML.replace( t, '' );
 		s.children[ 2 ].name = s.id;
