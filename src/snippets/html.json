@@ -1,209 +1,231 @@
 {
-    "reob-html": {
-        "body": [
-				"<html>",
-				"	<head>",
-				"		<meta charset=\"UTF-8\">",
-				"		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-				"		<title>$1</title>",
-				"		<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
-				"		<link rel=\"stylesheet\" href=\"../css/reob-containers.css\">",
-				"		<script src=\"../js/reob-containers.js\" type=\"application/javascript\" charset=\"utf-8\"></script>",
-				"	</head>",
-				"	<body>",
-				"		$2",
-				"	</body>",
-				"</html>"
-        ],
-        "description": "reob-html",
-        "prefix": "reob"
-     },
-    "reob-container": {
-        "body": [
-           "<div class=\"reob-container\">",
-           "  <div class=\"header\">${1:header}</div>",
-           "  <div class=\"left\">${2:left}</div>",
-           "  <div class=\"middle\">${3:middle}</div>",
-           "  <div class=\"right\">${4:right}</div>",
-           "  <div class=\"footer\">${5:footer}</div>",
-           "</div>"
-        ],
-        "description": "reob-container",
-        "prefix": "reob"
-     },
-     "reob-container-grid": {
-        "body": [
-           "<div class=\"reob-container-grid\">",
-           "   <div class=\"reob-container-grid-item\">",
-           "      <!-- Your code goes here -->",
-           "      ${1:code}",
-           "   </div>",
-           "</div>"
-        ],
-        "description": "reob-container-grid",
-        "prefix": "reob"
-     },
-     "reob-hbox": {
-        "body": [
-           "<div class=\"reob-hbox\">",
-           "   <!-- Your code goes here -->",
-           "   ${1:code}",
-           "</div>"
-        ],
-        "description": "reob-hbox",
-        "prefix": "reob"
-     },
-     "reob-vbox": {
-        "body": [
-           "<div class=\"reob-vbox\">",
-           "   <!-- Your code goes here -->",
-           "   ${1:code}",
-           "</div>"
-        ],
-        "description": "reob-vbox",
-        "prefix": "reob"
-     },
-     "reob-menu": {
-        "body": [
-           "<ul class=\"reob-menu\">",
-           "   <li><a href=\"${1:url}\">${2:label}</a></li>",
-           "   <li><a href=\"${3:url}\">${4:label}</a></li>",
-           "   <li><a href=\"${5:url}\">${6:label}</a>",
-           "      <ul id=\"reob-submenu\">",
-           "         <li><a href=\"${7:url}\">${8:label}</a></li>",
-           "         <li><a href=\"${9:url}\">${10:label}</a></li>",
-           "         <li><a href=\"${11:url}\">${12:label}</a></li>",
-           "      </ul>",
-           "   </li>",
-           "</ul>"
-        ],
-        "description": "reob-menu",
-        "prefix": "reob"
-     },
-     "reob-scroll": {
-        "body": [
-           "<div class=\"reob-scroll\">",
-           "   <!-- Your code goes here -->",
-           "   ${1:code}",
-           "</div>"
-        ],
-        "description": "reob-scroll",
-        "prefix": "reob"
-     },
-     "reob-slide-tab": {
-        "body": [
-           "<div class=\"reob-slide-tab\">",
-           "   <!-- Your code goes here -->",
-           "   ${1:code}",
-           "</div>"
-        ],
-        "description": "reob-slide-tab",
-        "prefix": "reob"
-     },
-     "reob-switch": {
-        "body": [
-           "<div class=\"reob-switch\">",
-           "   <label>NO</label>",
-           "   <label>",
-           "      <input type=\"checkbox\" name=\"${1:name}\">",
-           "      <span class=\"slider\"></span>",
-           "   </label>",
-           "   <label>YES</label>",
-           "</div>"
-        ],
-        "description": "reob-switch",
-        "prefix": "reob"
-     },
-     "reob-file": {
-        "body": [
-           "<input type=\"file\" class=\"reob-file\" id=\"${1:id}\" name=\"${2:name}\">"
-        ],
-        "description": "reob-file",
-        "prefix": "reob"
-     },
-     "reob-search": {
-        "body": [
-           "<div class=\"reob-search\">",
-           "   <div class=\"tooltip\">",
-           "      <input type=\"search\" placeholder=\"Filter\" onkeypress=\"${1:call_function}\">",
-           "      <button onclick=\"${2:call_function}\"><img src=\"../icons/fa-search.svg\"></img></button>",
-           "      <span class=\"tooltiptext\">${3:tooltip}</span>",
-           "   </div>",
-           "</div>"
-        ],
-        "description": "reob-search",
-        "prefix": "reob"
-     },
-     "reob-submit-button": {
-        "body": [
-           "<button class=\"reob-submit-button\" type=\"submit\">SUBMIT",
-           "   <img src=\"../icons/fa-upload.svg\"></img>",
-           "</button>"
-        ],
-        "description": "reob-submit-button",
-        "prefix": "reob"
-     },
-     "reob-download-button": {
-        "body": [
-           "<button class=\"reob-download-button\" type=\"submit\">DOWNLOAD",
-           "   <img src=\"../icons/fa-upload.svg\"></img>",
-           "</button>"
-        ],
-        "description": "reob-download-button",
-        "prefix": "reob"
-     },
-     "reob-table-pagination": {
-        "body": [
-           "<div class=\"reob-table-pagination\" id=\"${1:id}\">",
-           "   <button class=\"reob-fetch-prior-data\" type=\"submit\" onclick=\"location.href='${2:url}?offset=${3:offset}'\">PRIOR",
-           "      <img src=\"../icons/fa-angle-left.svg\"></img>",
-           "   </button>",
-           "   <button class=\"reob-fetch-next-data\" type=\"submit\" onclick=\"location.href='${4:url}?offset=${5:offset}'\">NEXT",
-           "      <img src=\"../icons/fa-angle-right.svg\"></img>",
-           "   </button>",
-           "</div>"
-        ],
-        "description": "reob-table-pagination",
-        "prefix": "reob"
-     },
-     "reob-multiselect": {
-        "body": [
-           "<div class=\"reob-multiselect\" id=\"${1:id}\">",
-           "   <div class=\"selected\"></div>",
-           "   <div class=\"options\">",
-           "      <optgroup label=\"${2:group}\">",
-           "         <option onclick=\"MultiSelect.addTag(this)\" value=\"${3:value}\">${4:label}</option>",
-           "      </optgroup>",
-           "   </div>",
-           "   <input type=\"hidden\">",
-           "</div>"
-        ],
-        "description": "reob-multiselect",
-        "prefix": "reob"
-     },
-     "reob-uniselect": {
-        "body": [
-           "<div class=\"reob-uniselect\" id=\"${1:id}\">",
-              "   <div class=\"selected\"></div>",
-              "   <div class=\"options\">",
-              "      <optgroup label=\"${2:group}\">",
-              "         <option onclick=\"UniSelect.addTag(this)\" value=\"${3:value}\">${4:label}</option>",
-              "      </optgroup>",
-              "   </div>",
-              "   <input type=\"hidden\">",
-              "</div>"
-           ],
-        "description": "reob-uniselect",
-        "prefix": "reob"
-     },
-     "reob-progress-bar": {
-        "body": [
-           "<div class=\"reob-progressbar\" id=\"${1:id}\">",
-           "   <div></div>",
-           "   <label>Total: 0%</label>",
-           "</div>"
-        ],
-        "description": "reob-progress-bar",
-        "prefix": "reob"
-     }
+	"reob-html": {
+		"body": [
+			"<!DOCTYPE html>",
+			"<html>",
+			"\t<head>",
+			"\t\t<meta charset=\"UTF-8\">",
+			"\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"\t\t<title>$1</title>",
+			"\t\t<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap\" rel=\"stylesheet\">",
+			"\t\t<link rel=\"stylesheet\" href=\"../css/reob-containers.css\">",
+			"\t\t<script src=\"../js/reob-containers.js\" type=\"application/javascript\" charset=\"utf-8\"></script>",
+			"\t</head>",
+			"\t<body>",
+			"\t\t<div class=\"reob-container\">",
+			"\t\t\t<div class=\"header\">",
+			"\t\t\t\t$2",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"left\">",
+			"\t\t\t\t$3",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"middle\">",
+			"\t\t\t\t$4",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"right\">",
+			"\t\t\t\t$5",
+			"\t\t\t</div>",
+			"\t\t\t<div class=\"footer\">",
+			"\t\t\t\t$6",
+			"\t\t\t</div>",
+			"\t\t</div>",
+			"\t</body>",
+			"</html>"
+		],
+		"description": "reob-html",
+		"prefix": "reob"
+	},
+	"reob-container": {
+		"body": [
+			"<div class=\"reob-container\">",
+			"\t<div class=\"header\">",
+			"\t\t$1",
+			"\t</div>",
+			"\t<div class=\"left\">",
+			"\t\t$2",
+			"\t</div>",
+			"\t<div class=\"middle\">",
+			"\t\t$3",
+			"\t</div>",
+			"\t<div class=\"right\">",
+			"\t\t$4",
+			"\t</div>",
+			"\t<div class=\"footer\">",
+			"\t\t$5",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "reob-container",
+		"prefix": "reob"
+	},
+	"reob-container-grid": {
+		"body": [
+			"<div class=\"reob-container-grid\">",
+			"\t<div class=\"reob-container-grid-item\">",
+			"\t\t${1:code}",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "reob-container-grid",
+		"prefix": "reob"
+	},
+	"reob-hbox": {
+		"body": [
+			"<div class=\"reob-hbox\">",
+			"\t${1:code}",
+			"</div>"
+		],
+		"description": "reob-hbox",
+		"prefix": "reob"
+	},
+	"reob-vbox": {
+		"body": [
+			"<div class=\"reob-vbox\">",
+			"\t${1:code}",
+			"</div>"
+		],
+		"description": "reob-vbox",
+		"prefix": "reob"
+	},
+	"reob-menu": {
+		"body": [
+			"<ul class=\"reob-menu\">",
+			"\t<li><a href=\"${1:url}\">${2:label}</a></li>",
+			"\t<li><a href=\"${3:url}\">${4:label}</a></li>",
+			"\t<li><a href=\"${5:url}\">${6:label}</a>",
+			"\t\t<ul id=\"reob-submenu\">",
+			"\t\t\t<li><a href=\"${7:url}\">${8:label}</a></li>",
+			"\t\t\t<li><a href=\"${9:url}\">${10:label}</a></li>",
+			"\t\t\t<li><a href=\"${11:url}\">${12:label}</a></li>",
+			"\t\t</ul>",
+			"\t</li>",
+			"</ul>"
+		],
+		"description": "reob-menu",
+		"prefix": "reob"
+	},
+	"reob-scroll": {
+		"body": [
+			"<div class=\"reob-scroll\">",
+			"\t${1:code}",
+			"</div>"
+		],
+		"description": "reob-scroll",
+		"prefix": "reob"
+	},
+	"reob-slide-tab": {
+		"body": [
+			"<div class=\"reob-slide-tab\">",
+			"\t${1:code}",
+			"</div>"
+		],
+		"description": "reob-slide-tab",
+		"prefix": "reob"
+	},
+	"reob-switch": {
+		"body": [
+			"<div class=\"reob-switch\">",
+			"\t<label>NO</label>",
+			"\t<label>",
+			"\t\t<input type=\"checkbox\" name=\"${1:name}\">",
+			"\t\t<span class=\"slider\"></span>",
+			"\t</label>",
+			"\t<label>YES</label>",
+			"</div>"
+		],
+		"description": "reob-switch",
+		"prefix": "reob"
+	},
+	"reob-file": {
+		"body": [
+			"<input type=\"file\" class=\"reob-file\" id=\"${1:id}\" name=\"${2:name}\">"
+		],
+		"description": "reob-file",
+		"prefix": "reob"
+	},
+	"reob-search": {
+		"body": [
+			"<div class=\"reob-search\">",
+			"\t<div class=\"tooltip\">",
+			"\t\t<input type=\"search\" placeholder=\"Filter\" onkeypress=\"${1:call_function}\">",
+			"\t\t<button onclick=\"${2:call_function}\"><img src=\"../icons/fa-search.svg\"></img></button>",
+			"\t\t<span class=\"tooltiptext\">${3:tooltip}</span>",
+			"\t</div>",
+			"</div>"
+		],
+		"description": "reob-search",
+		"prefix": "reob"
+	},
+	"reob-submit-button": {
+		"body": [
+			"<button class=\"reob-submit-button\" type=\"submit\">SUBMIT",
+			"\t<img src=\"../icons/fa-upload.svg\"></img>",
+			"</button>"
+		],
+		"description": "reob-submit-button",
+		"prefix": "reob"
+	},
+	"reob-download-button": {
+		"body": [
+			"<button class=\"reob-download-button\" type=\"submit\">DOWNLOAD",
+			"\t<img src=\"../icons/fa-upload.svg\"></img>",
+			"</button>"
+		],
+		"description": "reob-download-button",
+		"prefix": "reob"
+	},
+	"reob-table-pagination": {
+		"body": [
+			"<div class=\"reob-table-pagination\" id=\"${1:id}\">",
+			"\t<button class=\"reob-fetch-prior-data\" type=\"submit\" onclick=\"location.href='${2:url}?offset=${3:offset}'\">PRIOR",
+			"\t\t<img src=\"../icons/fa-angle-left.svg\"></img>",
+			"\t</button>",
+			"\t<button class=\"reob-fetch-next-data\" type=\"submit\" onclick=\"location.href='${4:url}?offset=${5:offset}'\">NEXT",
+			"\t\t<img src=\"../icons/fa-angle-right.svg\"></img>",
+			"\t</button>",
+			"</div>"
+		],
+		"description": "reob-table-pagination",
+		"prefix": "reob"
+	},
+	"reob-multiselect": {
+		"body": [
+			"<div class=\"reob-multiselect\" id=\"${1:id}\">",
+			"\t<div class=\"selected\"></div>",
+			"\t<div class=\"options\">",
+			"\t\t<optgroup label=\"${2:group}\">",
+			"\t\t\t<option onclick=\"ReobMultiSelect.addTag(this)\" value=\"${3:value}\">${4:label}</option>",
+			"\t\t</optgroup>",
+			"\t</div>",
+			"\t<input type=\"hidden\">",
+			"</div>"
+		],
+		"description": "reob-multiselect",
+		"prefix": "reob"
+	},
+	"reob-uniselect": {
+		"body": [
+			"<div class=\"reob-uniselect\" id=\"${1:id}\">",
+			"\t<div class=\"selected\"></div>",
+			"\t<div class=\"options\">",
+			"\t\t<optgroup label=\"${2:group}\">",
+			"\t\t\t<option onclick=\"ReobUniSelect.addTag(this)\" value=\"${3:value}\">${4:label}</option>",
+			"\t\t</optgroup>",
+			"\t</div>",
+			"\t<input type=\"hidden\">",
+			"</div>"
+		],
+		"description": "reob-uniselect",
+		"prefix": "reob"
+	},
+	"reob-progress-bar": {
+		"body": [
+			"<div class=\"reob-progressbar\" id=\"${1:id}\">",
+			"\t<div></div>",
+			"\t<label>Total: 0%</label>",
+			"</div>"
+		],
+		"description": "reob-progress-bar",
+		"prefix": "reob"
+	}
 }
