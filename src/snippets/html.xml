@@ -211,7 +211,7 @@
 	<div class="selected"></div>
 	<div class="options">
 		<optgroup label="${2:group}">
-			<option onclick="ReobReobUniSelect.addTag(this)" value="${3:value}">${4:label}</option>
+			<option onclick="ReobUniSelect.addTag(this)" value="${3:value}">${4:label}</option>
 		</optgroup>
 	</div>
 	<input type="hidden">
