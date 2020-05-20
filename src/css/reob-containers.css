@@ -323,6 +323,19 @@ a {
 	text-decoration: none;
 }
 
+/* STYLING INPUT */
+input {
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #999
+}
+
+/* SET BODY SIZE */
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
 /* REOB-FORMAT-CLASSES */
 *.left-text   { text-align: left; }
 *.center-text { text-align: center; }
@@ -381,6 +394,7 @@ a {
 *.ph01 { padding-left:  1%; padding-right:  1% !important; }
 *.ph02 { padding-left:  2%; padding-right:  2% !important; }
 *.ph03 { padding-left:  3%; padding-right:  3% !important; }
+*.ph04 { padding-left:  4%; padding-right:  4% !important; }
 *.ph05 { padding-left:  5%; padding-right:  5% !important; }
 *.ph10 { padding-left: 10%; padding-right: 10% !important; }
 *.ph15 { padding-left: 15%; padding-right: 15% !important; }
@@ -388,10 +402,17 @@ a {
 *.ph25 { padding-left: 25%; padding-right: 25% !important; }
 *.ph30 { padding-left: 30%; padding-right: 30% !important; }
 
+*.ph01mm { padding-left:  1mm; padding-right:  1mm !important; }
+*.ph02mm { padding-left:  2mm; padding-right:  2mm !important; }
+*.ph03mm { padding-left:  3mm; padding-right:  3mm !important; }
+*.ph04mm { padding-left:  4mm; padding-right:  4mm !important; }
+*.ph05mm { padding-left:  5mm; padding-right:  5mm !important; }
+
 *.pv00 { padding-top:  0;  padding-bottom:  0  !important; }
 *.pv01 { padding-top:  1%; padding-bottom:  1% !important; }
 *.pv02 { padding-top:  2%; padding-bottom:  2% !important; }
 *.pv03 { padding-top:  3%; padding-bottom:  3% !important; }
+*.pv04 { padding-top:  4%; padding-bottom:  4% !important; }
 *.pv05 { padding-top:  5%; padding-bottom:  5% !important; }
 *.pv10 { padding-top: 10%; padding-bottom: 10% !important; }
 *.pv15 { padding-top: 15%; padding-bottom: 15% !important; }
@@ -399,12 +420,13 @@ a {
 *.pv25 { padding-top: 25%; padding-bottom: 25% !important; }
 *.pv30 { padding-top: 30%; padding-bottom: 30% !important; }
 
-/* REOB-CONTAINER */
-body > div.reob-container {
-	width:  100vw;
-	height: 100vh;
-}
+*.pv01mm { padding-top:  1mm; padding-bottom:  1mm !important; }
+*.pv02mm { padding-top:  2mm; padding-bottom:  2mm !important; }
+*.pv03mm { padding-top:  3mm; padding-bottom:  3mm !important; }
+*.pv04mm { padding-top:  4mm; padding-bottom:  4mm !important; }
+*.pv05mm { padding-top:  5mm; padding-bottom:  5mm !important; }
 
+/* REOB-CONTAINER */
 div.reob-container {
 	width: 100%;
 	height: 100%;
@@ -456,16 +478,13 @@ div.reob-container > div.footer {
 }
 
 /* REOB-HBOX */
-body > .reob-hbox {
-	width:  100vw;
-}
-
 .reob-hbox {
 	width: 100%;
 }
 
 .reob-hbox * {
 	display: inline-block;
+	height: 100%;
 }
 
 .reob-hbox .reob-vbox * {
@@ -473,16 +492,13 @@ body > .reob-hbox {
 }
 
 /* REOB-VBOX */
-body > .reob-vbox {
-	height: 100vh;
-}
-
 .reob-vbox {
 	height: 100%;
 }
 
 .reob-vbox * {
 	display: block;
+	width: 100%;
 }
 
 .reob-vbox .reob-hbox * {
