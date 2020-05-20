@@ -34,7 +34,7 @@
 </html>
 ]]></text>
 	<description>reob-html</description>
-	<tag>reob</tag>
+	<tag>reob.html</tag>
 	</snippet>
 	<snippet id="reob-container">
 	<text><![CDATA[
@@ -57,7 +57,7 @@
 </div>
 ]]></text>
 	<description>reob-container</description>
-	<tag>reob</tag>
+	<tag>reob.container</tag>
 	</snippet>
 	<snippet id="reob-container-grid">
 	<text><![CDATA[
@@ -68,7 +68,7 @@
 </div>
 ]]></text>
 	<description>reob-container-grid</description>
-	<tag>reob</tag>
+	<tag>reob.container.grid</tag>
 	</snippet>
 	<snippet id="reob-hbox">
 	<text><![CDATA[
@@ -77,7 +77,7 @@
 </div>
 ]]></text>
 	<description>reob-hbox</description>
-	<tag>reob</tag>
+	<tag>reob.hbox</tag>
 	</snippet>
 	<snippet id="reob-vbox">
 	<text><![CDATA[
@@ -86,7 +86,7 @@
 </div>
 ]]></text>
 	<description>reob-vbox</description>
-	<tag>reob</tag>
+	<tag>reob.vbox</tag>
 	</snippet>
 	<snippet id="reob-menu">
 	<text><![CDATA[
@@ -103,7 +103,7 @@
 </ul>
 ]]></text>
 	<description>reob-menu</description>
-	<tag>reob</tag>
+	<tag>reob.menu</tag>
 	</snippet>
 	<snippet id="reob-scroll">
 	<text><![CDATA[
@@ -112,7 +112,7 @@
 </div>
 ]]></text>
 	<description>reob-scroll</description>
-	<tag>reob</tag>
+	<tag>reob.scroll</tag>
 	</snippet>
 	<snippet id="reob-slide-tab">
 	<text><![CDATA[
@@ -121,7 +121,7 @@
 </div>
 ]]></text>
 	<description>reob-slide-tab</description>
-	<tag>reob</tag>
+	<tag>reob.slide.tab</tag>
 	</snippet>
 	<snippet id="reob-switch">
 	<text><![CDATA[
@@ -135,14 +135,14 @@
 </div>
 ]]></text>
 	<description>reob-switch</description>
-	<tag>reob</tag>
+	<tag>reob.switch</tag>
 	</snippet>
 	<snippet id="reob-file">
 	<text><![CDATA[
 			<input type="file" class="reob-file" id="${1:id}" name="${2:name}">
 ]]></text>
 	<description>reob-file</description>
-	<tag>reob</tag>
+	<tag>reob.file</tag>
 	</snippet>
 	<snippet id="reob-search">
 	<text><![CDATA[
@@ -155,7 +155,7 @@
 </div>
 ]]></text>
 	<description>reob-search</description>
-	<tag>reob</tag>
+	<tag>reob.search</tag>
 	</snippet>
 	<snippet id="reob-submit-button">
 	<text><![CDATA[
@@ -164,7 +164,7 @@
 </button>
 ]]></text>
 	<description>reob-submit-button</description>
-	<tag>reob</tag>
+	<tag>reob.submit.button</tag>
 	</snippet>
 	<snippet id="reob-download-button">
 	<text><![CDATA[
@@ -173,7 +173,7 @@
 </button>
 ]]></text>
 	<description>reob-download-button</description>
-	<tag>reob</tag>
+	<tag>reob.download.button</tag>
 	</snippet>
 </snippets>
 <snippet id="reob-table-pagination">
@@ -188,7 +188,7 @@
 </div>
 ]]></text>
 	<description>reob-table-pagination</description>
-	<tag>reob</tag>
+	<tag>reob.table.pagination</tag>
 	</snippet>
 	<snippet id="reob-multiselect">
 	<text><![CDATA[
@@ -203,7 +203,7 @@
 </div>
 ]]></text>
 	<description>reob-multiselect</description>
-	<tag>reob</tag>
+	<tag>reob.multiselect</tag>
 	</snippet>
 	<snippet id="reob-uniselect">
 	<text><![CDATA[
@@ -218,7 +218,7 @@
 </div>
 ]]></text>
 	<description>reob-uniselect</description>
-	<tag>reob</tag>
+	<tag>reob.uniselect</tag>
 	</snippet>
 	<snippet id="reob-progressbar">
 	<text><![CDATA[
@@ -228,6 +228,6 @@
 </div>
 ]]></text>
 	<description>reob-progress-bar</description>
-	<tag>reob</tag>
+	<tag>reob.progress.bar</tag>
 	</snippet>
 </snippets>
