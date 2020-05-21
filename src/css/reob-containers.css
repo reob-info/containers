@@ -323,20 +323,6 @@ a {
 	text-decoration: none;
 }
 
-/* STYLING INPUT */
-input {
-	border-bottom: 1px;
-	border-style: solid;
-	border-color: #999;
-	background-color: inherit;
-}
-
-/* SET BODY SIZE */
-body {
-	width: 100vw;
-	height: 100vh;
-}
-
 /* REOB-FORMAT-CLASSES */
 *.left-text   { text-align: left; }
 *.center-text { text-align: center; }
@@ -346,6 +332,27 @@ body {
 *.capitalize  { text-transform: capitalize; }
 
 *.none { display: none; }
+
+*.mw05 { min-width: 5%  !important; }
+*.mw10 { min-width: 10% !important; }
+*.mw15 { min-width: 15% !important; }
+*.mw20 { min-width: 20% !important; }
+*.mw25 { min-width: 25% !important; }
+*.mw30 { min-width: 30% !important; }
+*.mw35 { min-width: 35% !important; }
+*.mw40 { min-width: 40% !important; }
+*.mw45 { min-width: 45% !important; }
+*.mw50 { min-width: 50% !important; }
+*.mw55 { min-width: 55% !important; }
+*.mw60 { min-width: 60% !important; }
+*.mw65 { min-width: 65% !important; }
+*.mw70 { min-width: 70% !important; }
+*.mw75 { min-width: 75% !important; }
+*.mw80 { min-width: 80% !important; }
+*.mw85 { min-width: 85% !important; }
+*.mw90 { min-width: 90% !important; }
+*.mw95 { min-width: 95% !important; }
+*.mw100 { min-width: 100% !important; }
 
 *.w00 { display: none; width: 0; }
 *.w05 { width: 5%  !important; }
@@ -368,6 +375,27 @@ body {
 *.w90 { width: 90% !important; }
 *.w95 { width: 95% !important; }
 *.w100 { width: 100% !important; }
+
+*.mh05 { min-height: 5%  !important; }
+*.mh10 { min-height: 10% !important; }
+*.mh15 { min-height: 15% !important; }
+*.mh20 { min-height: 20% !important; }
+*.mh25 { min-height: 25% !important; }
+*.mh30 { min-height: 30% !important; }
+*.mh35 { min-height: 35% !important; }
+*.mh40 { min-height: 40% !important; }
+*.mh45 { min-height: 45% !important; }
+*.mh50 { min-height: 50% !important; }
+*.mh55 { min-height: 55% !important; }
+*.mh60 { min-height: 60% !important; }
+*.mh65 { min-height: 65% !important; }
+*.mh70 { min-height: 70% !important; }
+*.mh75 { min-height: 75% !important; }
+*.mh80 { min-height: 80% !important; }
+*.mh85 { min-height: 85% !important; }
+*.mh90 { min-height: 90% !important; }
+*.mh95 { min-height: 95% !important; }
+*.mh100 { min-height: 100% !important; }
 
 *.h00 { display: none; height: 0; }
 *.h05 { height: 5%  !important; }
@@ -427,6 +455,40 @@ body {
 *.pv04mm { padding-top:  4mm; padding-bottom:  4mm !important; }
 *.pv05mm { padding-top:  5mm; padding-bottom:  5mm !important; }
 
+/* SET BODY SIZE: FIX TROUBLES WITH DOCTYPE */
+body {
+	width: 100vw;
+	height: 100vh;
+}
+
+/* STYLING HTML FORM COMPONENTS */
+input {
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #999;
+	border-radius: 6px;
+}
+
+input, select, textarea, button, datalist {
+	outline: none;
+}
+
+input:focus, select:focus, textarea:focus, button:focus, datalist:focus {
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: #333;
+}
+
+input[type=text], input[type=date], input[type=time], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=url], input[type=week] {
+	background-color: inherit;
+}
+
+button {
+	border-radius: 6px;
+}
+
+/* STYLE THE REOB COMPONENTS */
+
 /* REOB-CONTAINER */
 div.reob-container {
 	width: 100%;
@@ -485,8 +547,13 @@ div.reob-container > div.footer {
 
 .reob-hbox * {
 	display: inline-block;
-	min-height: 100%;
-	margin-right: 1mm;;
+	min-height: 9mm;
+	margin-right: 1mm;
+}
+
+.reob-hbox label, .reob-hbox span, .reob-hbox li {
+	vertical-align: middle;
+	text-align: left;
 }
 
 .reob-hbox .reob-vbox * {
@@ -504,37 +571,48 @@ div.reob-container > div.footer {
 	display: block;
 	min-width: 100%;
 	margin-bottom: 1mm;
-	min-height: 5%;
+	min-height: 9mm;
+}
+
+.reob-vbox label, .reob-vbox span, .reob-vbox li {
+	vertical-align: middle;
+	text-align: center;
 }
 
 .reob-vbox .reob-hbox * {
 	display: inline-block;
 	min-width: 5%;
-	min-height: 100%;
+	min-height: 9mm;
 }
 
 /* REOB-MENU */
-#reob-menu > li { list-style-type: none; display: inline-block; padding: 2mm 3mm; }
-#reob-submenu > li { list-style-type: none; }
+.reob-menu > li {
+	list-style-type: none;
+	display: inline-block;
+}
 
-#reob-menu > li > a, #reob-submenu > li > a {
+.reob-submenu > li {
+	list-style-type: none;
+}
+
+.reob-menu > li > a, #reob-submenu > li > a {
 	color: #fff;
 	text-decoration: none;
 }
 
-#reob-menu li:hover {
+.reob-menu li:hover {
 	background-color: #ccc;
 }
 
-#reob-menu li:hover a {
+.reob-menu li:hover a {
 	color: #333;
 }
 
-#reob-menu li:hover #reob-submenu {
+.reob-menu li:hover #reob-submenu {
 	display: block;
 }
 
-#reob-submenu {
+.reob-submenu {
 	display: none;
 	float: left;
 	position: absolute;
@@ -547,20 +625,20 @@ div.reob-container > div.footer {
 	background-color: #ccc;
 }
 
-#reob-submenu li {
+.reob-submenu li {
 	width: 95%;
 	display: block;
 	line-height: 190%;
 }
 
-#reob-submenu li a {
+.reob-submenu li a {
 	width: 100%;
 	color: #333;
 	background-color: #ccc;
 }
 
-#reob-submenu li:hover,
-#reob-submenu li:hover a {
+.reob-submenu li:hover,
+.reob-submenu li:hover a {
 	color: #fff;
 	background-color: #333;
 }
