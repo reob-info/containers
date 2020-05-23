@@ -318,11 +318,6 @@
 	border: 0;
 }
 
-/* REMOVE BROWSER DEFAULT: UNDERLINE (for <a> tags) */
-a {
-	text-decoration: none;
-}
-
 /* REOB-FORMAT-CLASSES */
 *.left-text   { text-align: left; }
 *.center-text { text-align: center; }
@@ -419,49 +414,53 @@ a {
 *.h95 { height: 95% !important; }
 *.h100 { height: 100% !important; }
 
-*.ph00 { padding-left:  0;  padding-right:  0  !important; }
-*.ph01 { padding-left:  1%; padding-right:  1% !important; }
-*.ph02 { padding-left:  2%; padding-right:  2% !important; }
-*.ph03 { padding-left:  3%; padding-right:  3% !important; }
-*.ph04 { padding-left:  4%; padding-right:  4% !important; }
-*.ph05 { padding-left:  5%; padding-right:  5% !important; }
-*.ph10 { padding-left: 10%; padding-right: 10% !important; }
-*.ph15 { padding-left: 15%; padding-right: 15% !important; }
-*.ph20 { padding-left: 20%; padding-right: 20% !important; }
-*.ph25 { padding-left: 25%; padding-right: 25% !important; }
-*.ph30 { padding-left: 30%; padding-right: 30% !important; }
+*.ph00 { padding-left:  0  !important; padding-right:  0  !important; }
+*.ph01 { padding-left:  1% !important; padding-right:  1% !important; }
+*.ph02 { padding-left:  2% !important; padding-right:  2% !important; }
+*.ph03 { padding-left:  3% !important; padding-right:  3% !important; }
+*.ph04 { padding-left:  4% !important; padding-right:  4% !important; }
+*.ph05 { padding-left:  5% !important; padding-right:  5% !important; }
+*.ph10 { padding-left: 10% !important; padding-right: 10% !important; }
+*.ph15 { padding-left: 15% !important; padding-right: 15% !important; }
+*.ph20 { padding-left: 20% !important; padding-right: 20% !important; }
+*.ph25 { padding-left: 25% !important; padding-right: 25% !important; }
+*.ph30 { padding-left: 30% !important; padding-right: 30% !important; }
 
-*.ph01mm { padding-left:  1mm; padding-right:  1mm !important; }
-*.ph02mm { padding-left:  2mm; padding-right:  2mm !important; }
-*.ph03mm { padding-left:  3mm; padding-right:  3mm !important; }
-*.ph04mm { padding-left:  4mm; padding-right:  4mm !important; }
-*.ph05mm { padding-left:  5mm; padding-right:  5mm !important; }
+*.ph01mm { padding-left:  1mm !important; padding-right:  1mm !important; }
+*.ph02mm { padding-left:  2mm !important; padding-right:  2mm !important; }
+*.ph03mm { padding-left:  3mm !important; padding-right:  3mm !important; }
+*.ph04mm { padding-left:  4mm !important; padding-right:  4mm !important; }
+*.ph05mm { padding-left:  5mm !important; padding-right:  5mm !important; }
 
-*.pv00 { padding-top:  0;  padding-bottom:  0  !important; }
-*.pv01 { padding-top:  1%; padding-bottom:  1% !important; }
-*.pv02 { padding-top:  2%; padding-bottom:  2% !important; }
-*.pv03 { padding-top:  3%; padding-bottom:  3% !important; }
-*.pv04 { padding-top:  4%; padding-bottom:  4% !important; }
-*.pv05 { padding-top:  5%; padding-bottom:  5% !important; }
-*.pv10 { padding-top: 10%; padding-bottom: 10% !important; }
-*.pv15 { padding-top: 15%; padding-bottom: 15% !important; }
-*.pv20 { padding-top: 20%; padding-bottom: 20% !important; }
-*.pv25 { padding-top: 25%; padding-bottom: 25% !important; }
-*.pv30 { padding-top: 30%; padding-bottom: 30% !important; }
+*.pv00 { padding-top:  0  !important; padding-bottom:  0  !important; }
+*.pv01 { padding-top:  1% !important; padding-bottom:  1% !important; }
+*.pv02 { padding-top:  2% !important; padding-bottom:  2% !important; }
+*.pv03 { padding-top:  3% !important; padding-bottom:  3% !important; }
+*.pv04 { padding-top:  4% !important; padding-bottom:  4% !important; }
+*.pv05 { padding-top:  5% !important; padding-bottom:  5% !important; }
+*.pv10 { padding-top: 10% !important; padding-bottom: 10% !important; }
+*.pv15 { padding-top: 15% !important; padding-bottom: 15% !important; }
+*.pv20 { padding-top: 20% !important; padding-bottom: 20% !important; }
+*.pv25 { padding-top: 25% !important; padding-bottom: 25% !important; }
+*.pv30 { padding-top: 30% !important; padding-bottom: 30% !important; }
 
-*.pv01mm { padding-top:  1mm; padding-bottom:  1mm !important; }
-*.pv02mm { padding-top:  2mm; padding-bottom:  2mm !important; }
-*.pv03mm { padding-top:  3mm; padding-bottom:  3mm !important; }
-*.pv04mm { padding-top:  4mm; padding-bottom:  4mm !important; }
-*.pv05mm { padding-top:  5mm; padding-bottom:  5mm !important; }
+*.pv01mm { padding-top:  1mm !important; padding-bottom:  1mm !important; }
+*.pv02mm { padding-top:  2mm !important; padding-bottom:  2mm !important; }
+*.pv03mm { padding-top:  3mm !important; padding-bottom:  3mm !important; }
+*.pv04mm { padding-top:  4mm !important; padding-bottom:  4mm !important; }
+*.pv05mm { padding-top:  5mm !important; padding-bottom:  5mm !important; }
 
 /* SET BODY SIZE: FIX TROUBLES WITH DOCTYPE */
 body {
-	width: 100vw;
+	width:  100vw;
 	height: 100vh;
 }
 
 /* STYLING HTML FORM COMPONENTS */
+a {
+	text-decoration: none;
+}
+
 input {
 	border-bottom: 1px;
 	border-style: solid;
@@ -481,10 +480,17 @@ input:focus, select:focus, textarea:focus, button:focus, datalist:focus {
 
 input[type=text], input[type=date], input[type=time], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=url], input[type=week] {
 	background-color: inherit;
+	font-size: 16px;
+}
+
+input[type=button], button {
+	background-color: #28f;
+	color: #fff !important;
 }
 
 button {
 	border-radius: 6px;
+	font-size: 16px;
 }
 
 /* STYLE THE REOB COMPONENTS */
@@ -551,9 +557,13 @@ div.reob-container > div.footer {
 	margin-right: 1mm;
 }
 
-.reob-hbox label, .reob-hbox span, .reob-hbox li {
-	vertical-align: middle;
+.reob-hbox label, .reob-hbox span, .reob-hbox li, .reob-hbox li a {
+	vertical-align: -3mm;
 	text-align: left;
+}
+
+.reob-hbox label, .reob-hbox span {
+	vertical-align: -6mm;
 }
 
 .reob-hbox .reob-vbox * {
@@ -568,14 +578,14 @@ div.reob-container > div.footer {
 }
 
 .reob-vbox * {
-	display: block;
-	min-width: 100%;
-	margin-bottom: 1mm;
+	display: inline-block;
 	min-height: 9mm;
+	margin-bottom: 1mm;
+	min-width: 100%;
 }
 
-.reob-vbox label, .reob-vbox span, .reob-vbox li {
-	vertical-align: middle;
+.reob-vbox label, .reob-vbox span, .reob-vbox li a {
+	vertical-align: 2mm;
 	text-align: center;
 }
 
@@ -595,9 +605,9 @@ div.reob-container > div.footer {
 	list-style-type: none;
 }
 
-.reob-menu > li > a, #reob-submenu > li > a {
+.reob-menu > li > a, .reob-submenu > li > a {
 	color: #fff;
-	text-decoration: none;
+	vertical-align: -3mm;
 }
 
 .reob-menu li:hover {
@@ -608,7 +618,7 @@ div.reob-container > div.footer {
 	color: #333;
 }
 
-.reob-menu li:hover #reob-submenu {
+.reob-menu li:hover .reob-submenu {
 	display: block;
 }
 
