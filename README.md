@@ -60,3 +60,14 @@ These icons was manually renamed to have their names starting with "fa-" as an a
 
 **You can contribute to Containers creating amazing themes and commiting to our repository, <br>
 donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
+
+<pre>
+=================================================================================================
+- SUPPORTED BROWSERS (MINIMUM VERSION):
+ - CHROME : 49
+ - IE/EDGE: 15
+ - FIREFOX: 31
+ - SAFARI :  9.1
+ - OPERA  : 36
+=================================================================================================
+</pre>
