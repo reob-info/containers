@@ -16,6 +16,15 @@
 	IF YOU DECIDED TO USE IT, TAKE ALL THE RISK FOR YOURSELF.
 
 	=================================================================================================
+	- SUPPORTED BROWSERS (MINIMUM VERSION):
+	 - CHROME : 49
+	 - IE/EDGE: 15
+	 - FIREFOX: 31
+	 - SAFARI :  9.1
+	 - OPERA  : 36
+	=================================================================================================
+
+	=================================================================================================
 	- FORMAT CLASSES IN THIS FILE:
 	 - SET TEXT ALIGN:
 		- left-text
@@ -452,8 +461,25 @@
 
 /* SET BODY SIZE: FIX TROUBLES WITH DOCTYPE */
 body {
+	--color-bg: #fff;
+	--color-fg: #333;
+	--color-bg-input: #ccc;
+	--color-fg-input: #333;
+	--color-bg-button: #28f;
+	--color-fg-button: #fff;
+	--color-bg-option: #333;
+	--color-fg-option: #fff;
+	--color-bg-menu: inherit;
+	--color-fg-menu: #fff;
+	--color-bg-submenu: #ccc;
+	--color-fg-submenu: #333;
+	--color-border-focus: #333;
+	--color-border-input: #999;
+	--color-hover-button: #18e;
 	width:  100vw;
 	height: 100vh;
+	color: var(--color-fg);
+	background-color: var(--color-bg);
 }
 
 /* STYLING HTML FORM COMPONENTS */
@@ -464,8 +490,9 @@ a {
 input {
 	border-bottom: 1px;
 	border-style: solid;
-	border-color: #999;
+	border-color: var(--color-border-input);
 	border-radius: 6px;
+	color: var(--color-fg-input)
 }
 
 input, select, textarea, button, datalist {
@@ -475,7 +502,7 @@ input, select, textarea, button, datalist {
 input:focus, select:focus, textarea:focus, button:focus, datalist:focus {
 	border-bottom: 1px;
 	border-style: solid;
-	border-color: #333;
+	border-color: var(--color-border-focus);
 }
 
 input[type=text], input[type=date], input[type=time], input[type=datetime], input[type=datetime-local], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=url], input[type=week] {
@@ -484,8 +511,8 @@ input[type=text], input[type=date], input[type=time], input[type=datetime], inpu
 }
 
 input[type=button], button {
-	background-color: #28f;
-	color: #fff !important;
+	background-color: var(--color-bg-button);
+	color: var(--color-fg-button) !important;
 }
 
 button {
@@ -606,16 +633,17 @@ div.reob-container > div.footer {
 }
 
 .reob-menu > li > a, .reob-submenu > li > a {
-	color: #fff;
+	color: var(--color-fg-menu);
+	background-color: var(--color-bg-menu);
 	vertical-align: -3mm;
 }
 
 .reob-menu li:hover {
-	background-color: #ccc;
+	background-color: var(--color-bg-submenu);
 }
 
 .reob-menu li:hover a {
-	color: #333;
+	color: var(--color-fg-menu);
 }
 
 .reob-menu li:hover .reob-submenu {
@@ -630,9 +658,9 @@ div.reob-container > div.footer {
 	z-index: 3;
 	text-align: left;
 	padding: 2mm 2mm 2mm 1%;
-	border: 1px solid #333;
+	border: 1px solid var(--color-border-focus);
 	border-top: 0;
-	background-color: #ccc;
+	background-color: var(--color-bg-submenu);
 }
 
 .reob-submenu li {
@@ -643,14 +671,14 @@ div.reob-container > div.footer {
 
 .reob-submenu li a {
 	width: 100%;
-	color: #333;
-	background-color: #ccc;
+	color: var(--color-fg-submenu);
+	background-color: var(--color-bg-submenu);
 }
 
 .reob-submenu li:hover,
 .reob-submenu li:hover a {
-	color: #fff;
-	background-color: #333;
+	color: var(--color-fg-menu);
+	background-color: var(--color-fg-submenu);
 }
 
 /* REOB-SCROLL */
@@ -668,7 +696,8 @@ div.reob-container > div.footer {
 	width: 100vw;
 	height: 20vh;
 	transition: top 2s;
-	background-color: #fff;
+	background-color: var(--color-bg);
+	color: var(--color-fg);
 	opacity: 100%;
 	overflow: scroll;
 	z-index: 5;
@@ -712,7 +741,7 @@ div.reob-container > div.footer {
 	height: 5mm;
 	margin-top: 0;
 	margin-left: 0;
-	background-color: #ccc;
+	background-color: var(--color-bg-input);
 	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 3mm;
@@ -725,18 +754,18 @@ div.reob-container > div.footer {
 	width: 3mm;
 	left: 4px;
 	bottom: 4px;
-	background-color: #fff;
+	background-color: var(--color-bg);
 	-webkit-transition: .4s;
 	transition: .4s;
 	border-radius: 50%;
 }
 
 .reob-switch input:checked + .slider {
-	background-color: #28f;
+	background-color: var(--color-bg-button);
 }
 
 .reob-switch input:focus + .slider {
-	box-shadow: 0 0 1px #28f;
+	box-shadow: 0 0 1px var(--color-bg-button);
 }
 
 .reob-switch input:checked + .slider:before {
@@ -753,35 +782,34 @@ div.reob-container > div.footer {
 .reob-file::before {
 	content: 'Selecione a Planilha a Importar';
 	display: inline-block;
-	background-color: #ccc;
-	border: 1px solid #999;
+	background-color: var(--color-bg-input);
+	border: 1px solid var(--color-border-input);
 	border-radius: 6px;
 	padding: 5px 8px;
 	outline: none;
 	white-space: nowrap;
 	-webkit-user-select: none;
 	cursor: pointer;
-	text-shadow: 1px 1px #fff;
+	text-shadow: 1px 1px var(--color-bg);
 	font-weight: 700;
 	font-size: 10pt;
 }
 
 .reob-file:hover::before {
-	border-color: #333;
+	border-color: var(--color-border-focus);
 }
 
 .reob-file:active::before {
-	background-color: #ccc;
+	background-color: var(--color-bg-input);
 }
 
 /* REOB-SEARCH */
 .reob-search input[type=search] {
 	padding: 2.3mm;
 	font-size: 16px;
-	border: 1px solid #666;
 	float: left;
 	height: 10mm;
-	background: #eee;
+	background-color: var(--color-bg);
 	border-radius: 6px 0 0 6px;
 }
 
@@ -794,10 +822,10 @@ div.reob-container > div.footer {
 	margin-left: 0mm;
 	width: 9mm;
 	height: 10mm;
-	background: #28f;
-	color: #fff;
+	background: var(--color-bg-button);
+	color: var(--color-fg-button);
 	font-size: 16px;
-	border: 1px solid #666;
+	border: 1px solid var(--color-border-input);
 	border-left: none; /* Prevent double borders */
 	cursor: pointer;
 	border-radius: 0 6px 6px 0;
@@ -811,7 +839,7 @@ div.reob-container > div.footer {
 }
 
 .reob-search button:hover {
-	background: #18e;
+	background: var(--color-hover-button);
 }
 
 .reob-search::after {
@@ -830,8 +858,8 @@ div.reob-container > div.footer {
 	left: 2vw;
 	visibility: hidden;
 	width: 70mm;
-	background-color: #28f;
-	color: #fff;
+	background-color: var(--color-bg-button);
+	color: var(--color-fg-button);
 	text-align: center;
 	border-radius: 6px;
 	padding: 5px 0;
@@ -852,13 +880,13 @@ div.reob-container > div.footer {
 	padding: 2mm;
 	min-height: 7mm;
 	cursor: pointer;
-	border: 1px solid #666;
+	border: 1px solid var(--color-border-input);
 	border-radius: 6px;
 	font-weight: 600;
 }
 
 .reob-submit-button:hover, .reob-download-button:hover, .reob-table-pagination button:hover {
-	border-color: #333;
+	border-color: var(--color-border-focus);
 }
 .reob-submit-button img, .reob-download-button img, .reob-table-pagination button img {
 	position: relative;
@@ -890,13 +918,13 @@ div.reob-container > div.footer {
 .reob-multiselect {
 	width: 60%;
 	height: 9mm;
-	border: 1px solid #666;
+	border: 1px solid var(--color-border-input);
 	border-radius: 6px;
-	background-color: #ccc;
+	background-color: var(--color-bg-input);
 }
 
 .reob-multiselect:hover {
-	border-color: #333;
+	border-color: var(--color-border-focus);
 	border-radius: 6px 6px 6px 0;
 }
 
@@ -912,9 +940,9 @@ div.reob-container > div.footer {
 	margin-left: 1mm;
 	margin-right: 1mm;
 	padding: 1mm;
-	border: 1px solid #333;
-	color: #fff;
-	background-color: #333;
+	border: 1px solid var(--color-border-focus);
+	color: var(--color-fg-option);
+	background-color: var(--color-bg-option);
 	cursor: pointer;
 }
 
@@ -931,45 +959,45 @@ div.reob-container > div.footer {
 	position: absolute;
 	margin-left: -1px;
 	margin-top: 9mm;
-	border: 1px solid #333;
+	border: 1px solid var(--color-border-focus);
 	width: 20%;
 	overflow-y: scroll;
 	max-height: 50mm;
-	background-color: #fff;
+	background-color: var(--color-fg-option);
 	opacity: 100%;
 	z-index: 99;
 }
 
 .reob-multiselect .options optgroup {
 	margin: 1px 0 0 -1px;
-	background-color: #fff;
+	background-color: var(--color-fg-option);
 }
 
 .reob-multiselect .options option {
 	list-style-type: none;
 	padding: 1mm 1mm 1mm 3mm;
-	color: #333;
-	background-color: #ccc;
+	color: var(--color-fg-option);
+	background-color: var(--color-bg-option);
 	cursor: pointer;
 }
 
 .reob-multiselect .options option:hover {
-	color: #fff;
-	background-color: #333;
-	border-color: #fff;
+	color: var(--color-bg);
+	background-color: var(--color-bg-option);
+	border-color: var(--color-bg);
 }
 
 /* REOB-UNISELECT */
 .reob-uniselect {
 	width: 60%;
 	height: 9mm;
-	border: 1px solid #666;
+	border: 1px solid var(--color-border-input);
 	border-radius: 6px;
-	background-color: #ccc;
+	background-color: var(--color-bg-option);
 }
 
 .reob-uniselect:hover {
-	border-color: #333;
+	border-color: var(--color-border-focus);
 	border-radius: 6px 6px 6px 0;
 }
 
@@ -985,9 +1013,9 @@ div.reob-container > div.footer {
 	margin-left: 1mm;
 	margin-right: 1mm;
 	padding: 1mm;
-	border: 1px solid #333;
-	color: #fff;
-	background-color: #333;
+	border: 1px solid var(--color-border-focus);
+	color: var(--color-fg-option);
+	background-color: var(--color-bg-option);
 	cursor: pointer;
 }
 
@@ -1004,32 +1032,32 @@ div.reob-container > div.footer {
 	position: absolute;
 	margin-left: -1px;
 	margin-top: 9mm;
-	border: 1px solid #333;
+	border: 1px solid var(--color-border-input);
 	width: 20%;
 	overflow-y: scroll;
 	max-height: 50mm;
-	background-color: #fff;
+	background-color: var(--color-fg-option);
 	opacity: 100%;
 	z-index: 99;
 }
 
 .reob-uniselect .options optgroup {
 	margin: 1px 0 0 -1px;
-	background-color: #fff;
+	background-color: var(--color-fg-option);
 }
 
 .reob-uniselect .options option {
 	list-style-type: none;
 	padding: 1mm 1mm 1mm 3mm;
-	color: #333;
-	background-color: #ccc;
+	color: var(--color-fg-option);
+	background-color: var(--color-bg-option);
 	cursor: pointer;
 }
 
 .reob-uniselect .options option:hover {
-	color: #fff;
-	background-color: #333;
-	border-color: #fff;
+	color: var(--color-bg);
+	background-color: var(--color-bg-option);
+	border-color: var(--color-bg);
 }
 
 /* REOB-PROGRESS-BAR */
@@ -1038,8 +1066,8 @@ div.reob-container > div.footer {
 	height: 10mm;
 	margin-top: 5mm;
 	margin-bottom: 3mm;
-	background-color: #ccc;
-	border: 1px solid #666;
+	background-color: var(--color-bg);
+	border: 1px solid var(--color-border-input);
 	border-radius: 6px;
 }
 
@@ -1048,14 +1076,14 @@ div.reob-container > div.footer {
 	height: 10mm;
 	margin: 0;
 	border-radius: 6px;
-	background-color: #333;
+	background-color: var(--color-border-input);
 }
 
 .reob-progress-bar > label {
 	position: relative;
 	top: -9mm;
 	margin-left: 3mm;
-	color: #fff;
+	color: var(--color-bg);
 	float: left;
 	font-weight: bold;
 }
