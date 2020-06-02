@@ -62,12 +62,32 @@ These icons was manually renamed to have their names starting with "fa-" as an a
 donating (<a href="https://www.patreon.com/reob">Patreon</a>) or with suggestions.**
 
 <pre>
-=================================================================================================
-- SUPPORTED BROWSERS (MINIMUM VERSION):
- - CHROME : 49
- - IE/EDGE: 15
- - FIREFOX: 31
- - SAFARI :  9.1
- - OPERA  : 36
-=================================================================================================
+=====================================================================================================
+- SUPPORTED BROWSERS (MINIMUM VERSION) [COMPATIBILITY: 92.73% OF GLOBAL USED BROWSERS at 2020-06-02]:
+  ---------------------------------------------------
+   BROWSER   : VERSION : PLATFORM
+  ---------------------------------------------------
+ - CHROME    : 49      : PC/MAC
+ - CHROME    : 81      : ANDROID
+ - EDGE      : 16      : PC
+ - FIREFOX   : 34      : PC/MAC
+ - FIREFOX   : 68      : ANDROID
+ - OPERA     : 36      : PC/MAC
+ - OPERA     : 46      : iOS, ANDROID (OPERA MOBILE)
+ - SAFARI    : 13.1    : MAC
+ - SAFARI    : 13.4    : iOS
+ - SAMSUNG   : 11.1    : ANDROID
+  ---------------------------------------------------
+
+- SUPPORTED BROWSERS? [UNKNOWN COMPATIBILITY: 1.98% at 2020-06-02]:
+ - UC BROWSER: 12.12   : ANDROID
+
+- NOT SUPPORTED BROWSERS [NOT COMPATIBLE: 2.70% at 2020-06-02]:
+ - IE
+ - OPERA MINI
+ - QQ
+
+NOTE: MINIMUM VERSION WAS TAKEN FROM <a href="https://caniuse.com">https://caniuse.com</a>
+LOOKING FOR CSS FEATURES THAT WE USE.
+=====================================================================================================
 </pre>
